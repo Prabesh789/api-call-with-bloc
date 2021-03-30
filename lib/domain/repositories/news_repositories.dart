@@ -5,6 +5,7 @@ class NewsRepositories {
   Dio _dio = Dio();
   Future<NewsModel> fetchData() async {
     try {
+      // "https://newsapi.org/v2/top-headlines?country=in&apiKey=b6709cd0f39d40808d70c8bf14c39ac1&category=technology"
       final response = await _dio.get(
           'https://thegrowingdeveloper.org/apiview?id=2&type=application/json');
 
